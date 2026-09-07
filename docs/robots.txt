@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://dtolkovets.github.io/sitemap.xml
