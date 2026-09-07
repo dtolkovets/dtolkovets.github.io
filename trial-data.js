@@ -28,7 +28,7 @@ export const DATA = {
       title:'Generative Face Textures for a Projection Robot', status:'Internship project · 2026', origin:'Furhat Robotics, Stockholm',
       sub:"Describe a face in words or drop in a reference image, and a generative pipeline turns it into a texture that fits the robot's back-projected head.",
       bullets:["A generation pipeline that turns a text prompt, a reference image, or both into a face texture that fits the robot's projection geometry.",'Built a browser interface with a live 3D preview of the generated face on the robot head next to the current face map, with separate face and eye generation steps.','Added character load/save, reference-image upload, and a gesture panel to check how a generated texture behaves under facial animation.'],
-      tags:['Generative Models','Multimodal Input','WebGL','UI Prototyping','Docker','Python'],
+      tags:['Generative Models','Multimodal Input','UI Prototyping','WebGL','Python','Docker'],
       media:[
         VID('assets/face-textures/ui-webgl-loop.mp4','assets/face-textures/ui-webgl-poster.webp','Interactive 3D preview: the generated face on the head model can be moved, rotated and zoomed.'),
         VID('assets/face-textures/ui-gestures-loop.mp4','assets/face-textures/ui-gestures-poster.webp','Gesture test: the generated texture under facial animation.'),
@@ -39,7 +39,7 @@ export const DATA = {
       title:'Real-Time Computer Vision for a Social Robot', status:'Internship project · 2025', origin:'Furhat Robotics, Stockholm',
       sub:'A local object-detection module for the Furhat robot, tuned live from a custom interface.',
       bullets:["A local object-detection module for the Furhat robot: a YOLO detector runs on a PC beside the robot and processes the robot's camera stream via Furhat's WebSocket API in real time.",'Custom interface for tuning while the system runs: confidence threshold, processing resolution, class filter, and model switching.','Presented the system in a pre-recorded demo at the 9th Furhat Conference.'],
-      tags:['Computer Vision','YOLO','WebSockets','UI Prototyping','Python'],
+      tags:['Computer Vision','UI Prototyping','WebSockets','Python'],
       media:[
         YT('plZun_BxsN4',"Demo for the 9th Furhat Conference: computer vision running on a PC with the robot's camera streamed over Furhat's real-time API."),
         IMG('assets/realtime-cv/ui-standard.webp','Settings panel with dynamic confidence threshold and class filter.'),
@@ -52,7 +52,7 @@ export const DATA = {
       title:'Open-Source Smart Glasses Kit', status:'Course project · 10/2024 – 05/2025', origin:'Product Engineering II · TH Köln',
       sub:'A low-cost, multimodal-LLM smart glasses kit designed so that non-experts can build and use it, validated in a usability study.',
       bullets:['Engineered a low-cost, MLLM-based smart glasses kit for easy replication by non-experts.','Designed hardware and software to enable assembly without special tools or programming.','Conducted a usability study where 5 out of 6 non-experts assembled and operated the kit unaided.'],
-      tags:['Multimodal LLM Integration','UI Design','UX','Usability Testing','CAD','Speech Processing','Python'],
+      tags:['Multimodal LLM Integration','Speech Processing','UI Design','UX','CAD','Usability Testing','Python'],
       link:{ href:'https://v0-open-a-eyes.vercel.app/', label:'Open-A-Eyes project site ↗' },
       media:[
         VID('assets/smart-glasses/turntable-loop.mp4','assets/smart-glasses/turntable-poster.webp','Exploded view of the kit.'),
@@ -66,7 +66,7 @@ export const DATA = {
       title:'Voice-Controlled Cobot System', status:'Course project · 10/2024 – 02/2025', origin:'Service and Industry Robotics · TH Köln',
       sub:'Ask for a tool, get the tool: a ROS 2 service architecture that links speech, object detection, and arm control for hands-free fetching and stowing.',
       bullets:['Developed a ROS 2 service-based architecture with a central manager orchestrating dialogue, object detection, and robotic arm control for collaborative tool fetching and stowing.','Linked STT, LLM intent recognition, and TTS for hands-free interaction in a shared workspace.','Derived closed-form IK for a 5-DOF arm, bypassing 6D solver limits caused by coupled orientation.','Iteratively trained a YOLO11-OBB model for oriented tool detection, raising mAP50-95 to ~81%.'],
-      tags:['Human-Robot Interaction','ROS 2','MoveIt','Gazebo','RViz','TF2','Control Engineering','Computer Vision','Speech Processing','Empirical Research','Python','C++','CMake'],
+      tags:['Human-Robot Interaction','Computer Vision','Speech Processing','ROS 2','MoveIt','Gazebo','RViz','TF2','Empirical Research','Python','C++','CMake'],
       media:[
         YT('JqvvkfmM_tQ','Prototype demo video.'),
         IMG('assets/voice-cobot/demo-example.webp','Tool hand-over after a voice request.'),
@@ -81,7 +81,7 @@ export const DATA = {
       title:'Retrieval-Augmented Generation Study Chatbot', status:'Course project · 02/2024 – 10/2024', origin:'Human-Machine-Interaction · TH Köln',
       sub:'An exam-preparation chatbot that shows where its answers come from, measured against a plain LLM for hallucinations.',
       bullets:['Built a RAG chatbot for exam preparation with an interface that displays information sources.','Quantitatively compared retrieval-augmented GPT-4o with base GPT-4o on hallucination rates.','Conducted a usability study to assess the helpfulness of the displayed information sources.'],
-      tags:['Retrieval-Augmented Generation','Human-Machine Interaction','UI Design','Usability Testing','Empirical Research','Agile Project Management','Python','Conda'],
+      tags:['Retrieval-Augmented Generation','Human-Machine Interaction','UI Design','Empirical Research','Usability Testing','Python','Conda'],
       media:[
         IMG('assets/rag-chatbot/chatbot-example.webp',"The interface: chat on the left, the retrieved sources in the middle, and a document viewer on the right that renders formulas and images correctly. Built on Weaviate's open-source RAG front-end, adapted for the study."),
         IMG('assets/rag-chatbot/color-blindness-visualisation.webp','The interface was designed to stay usable with colour-vision deficiencies; normal vision next to simulated blue, red and green weakness.')
