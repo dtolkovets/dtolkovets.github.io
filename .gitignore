@@ -1,0 +1,30 @@
+# This repository is PUBLIC. Anything committed here can be read and
+# downloaded by anyone, and stays readable in the git history even if it is
+# deleted later. Add anything you would not publish to this list BEFORE it
+# is ever committed.
+
+# Original source material for the redesign: briefs, raw content, context
+# dumps. Reference only, not part of the site.
+uploads/
+
+# Superseded design ("A Refined Blueprint"), kept locally in case it is
+# wanted again. Not part of the site.
+archive/
+
+# Internal working notes. Kept locally, not published: they are development
+# rationale, not part of the portfolio a visitor or recruiter should read.
+CLAUDE.md
+DEPLOY-PROMPT.md
+
+# Editor / tooling leftovers
+.thumbnail
+
+# OneDrive and Windows artefacts
+desktop.ini
+Thumbs.db
+*.lnk
+
+# Local server / editor scratch
+*.log
+.vscode/
+.idea/
