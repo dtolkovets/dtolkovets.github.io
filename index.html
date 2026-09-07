@@ -3,19 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Denis Tolkovets · Portfolio</title>
+<title>Denis Tolkovets</title>
 <meta name="author" content="Denis Tolkovets">
 <meta name="theme-color" content="#0a2352">
 <link rel="canonical" href="https://dtolkovets.github.io/">
 <meta property="og:site_name" content="Denis Tolkovets">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dtolkovets.github.io/">
-<meta property="og:title" content="Denis Tolkovets · Portfolio">
+<meta property="og:title" content="Denis Tolkovets">
+<meta property="og:description" content="Portfolio">
 <meta property="og:image" content="https://dtolkovets.github.io/assets/site/og-headshot.jpg">
 <meta property="og:image:width" content="960">
 <meta property="og:image:height" content="960">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Denis Tolkovets · Portfolio">
+<meta name="twitter:title" content="Denis Tolkovets">
+<meta name="twitter:description" content="Portfolio">
 <meta name="twitter:image" content="https://dtolkovets.github.io/assets/site/og-headshot.jpg">
 <link rel="icon" href="assets/site/favicon.ico" sizes="32x32">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/site/favicon-32.png">
@@ -567,7 +569,7 @@ class Component extends DCLogic {
     if (isProject) this.setMeta(pgRaw.title + ' · ' + NAME, pgRaw.sub, canon);
     else if (isExp) this.setMeta('Experience and education · ' + NAME, 'Industry, research and teaching experience in robotics, AI prototyping and hardware.', canon);
     else if (isDoc) this.setMeta(doc.h + ' · ' + NAME, doc.desc, canon);
-    else this.setMeta(NAME + ' · Portfolio', 'Robotics engineer in training: I build prototypes that see, talk, and act.', canon);
+    else this.setMeta(NAME, 'Robotics engineer in training: I build prototypes that see, talk, and act.', canon);
     return {
       isHome, isProject, isExp, isDoc, doc, isSub: !isHome,
       backHref: homeHref + (isDoc ? (page === (d.award || {}).doc ? '#awards' : '#certificates') : isProject ? '#projects' : isExp ? '#experience' : ''), backLabel: '← Home',
