@@ -121,7 +121,7 @@ export const DATA = {
     { h:'Finance Administrator', when:'08/2022 – present', where:'Bahn-Landwirtschaft e.V., Cologne', desc:'Manage allotment garden finances, maintain financial spreadsheets, and issue member invoices.' }
   ],
   education: { logo:'assets/logos/th-koeln.webp', degree:'BSc Mechanical Engineering – Product Engineering and Context (MPEC)', org:'TH Köln – University of Applied Sciences', when:'10/2022 – 08/2027 (expected) · Cologne, Germany · GPA 1.8 (German scale: 1.0 best, 4.0 pass)',
-    bullets:['Problem-Based Learning (PBL) with smart mechatronic systems and product development.','Focus on research methodology: projects concluded with empirical evaluations and scientific papers.','Elective specialisation: Social Robotics (Human-Machine-Interaction, Service and Industry Robotics).','Strong results in research courses: Product Engineering I & II (1.0) and Social Robotics (1.7).'] },
+    bullets:['Problem-Based Learning (PBL) through team projects, with agile methods and reflection on collaboration.','Focus on research methodology: projects concluded with empirical evaluations and scientific papers.','Elective specialisation: Social Robotics (Human-Machine-Interaction, Service and Industry Robotics).','Strong results in research courses: Product Engineering I & II (1.0) and Social Robotics (1.7).'] },
   skills: [
     { h:'Programming & Tools', items:['Python','C++','MATLAB/Simulink','Linux','Docker','Git','WebSockets'] },
     { h:'Robotics', items:['ROS 2 (Galactic)','MoveIt 2','Ignition Gazebo','RViz2','TF2'] },

@@ -15,6 +15,7 @@ archive/
 # rationale, not part of the portfolio a visitor or recruiter should read.
 CLAUDE.md
 DEPLOY-PROMPT.md
+TASK-*.md
 
 # Editor / tooling leftovers
 .thumbnail
