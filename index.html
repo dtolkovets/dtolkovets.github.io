@@ -363,8 +363,8 @@ body{margin:0;-webkit-font-smoothing:antialiased}
         </sc-if>
         <sc-if value="{{ m.isContain }}" hint-placeholder-val="{{ false }}">
           <figure style="margin:0">
-            <div style="border-radius:8px;overflow:hidden;border:1px solid var(--edge);background:var(--contain-bg);box-shadow:var(--shadow);display:grid;place-items:center;padding:1rem"><img src="{{ m.img }}" alt="" loading="lazy" style="max-width:100%;width:auto;height:auto;max-height:min(560px,calc(100svh - 12rem));display:block"></div>
-            <figcaption style="margin-top:.7rem;font-size:.9rem;color:var(--cap);text-wrap:pretty">{{ m.cap }}</figcaption>
+            <div style="border-radius:8px;overflow:hidden;border:1px solid var(--edge);background:var(--contain-bg);box-shadow:var(--shadow);display:grid;place-items:center;padding:{{ m.containPad }}"><img src="{{ m.img }}" alt="{{ m.containAlt }}" loading="lazy" style="max-width:100%;width:{{ m.containWidth }};height:auto;max-height:min(560px,calc(100svh - 12rem));object-fit:contain;display:block"></div>
+            <figcaption style="margin-top:.7rem;font-size:.9rem;color:var(--cap);text-wrap:pretty">{{ m.cap }}<sc-if value="{{ m.fullSize }}" hint-placeholder-val="{{ false }}"> <a href="{{ m.img }}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500;display:inline-block">Open full-size diagram ↗</a></sc-if></figcaption>
           </figure>
         </sc-if>
         <sc-if value="{{ m.isPair }}" hint-placeholder-val="{{ false }}">
@@ -551,6 +551,9 @@ class Component extends DCLogic {
     const loopPaused = s.loopPaused || {};
     const media = (pgRaw.media || []).map((m, mi) => {
       const o = { ...m, isYt: !!m.yt && !m.short, isShort: !!m.yt && !!m.short, isShorts: !!m.shorts, isVideo: !!m.video, isImg: !!m.img && !m.contain, isContain: !!m.img && !!m.contain, isPair: !!m.pair, isHeading: !!m.heading };
+      o.containAlt = m.alt || '';
+      o.containWidth = m.fullSize ? '100%' : 'auto';
+      o.containPad = m.flush ? '0' : '1rem';
       if (m.video) {
         const paused = !!loopPaused[mi];
         o.loopIcon = paused ? '▶' : '❚❚';
