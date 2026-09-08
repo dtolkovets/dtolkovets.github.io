@@ -32,7 +32,7 @@ export const DATA = {
       media:[
         VID('assets/face-textures/ui-webgl-loop.mp4','assets/face-textures/ui-webgl-poster.webp','Interactive 3D preview: the generated face on the head model can be moved, rotated and zoomed.'),
         VID('assets/face-textures/ui-gestures-loop.mp4','assets/face-textures/ui-gestures-poster.webp','Gesture test: the generated texture under facial animation.'),
-        { pair:['assets/face-textures/screenshot-2.webp','assets/face-textures/screenshot-3.webp'], cap:'Two more results, generated from the prompts “rock-lava face” and “old grandma with blue lips, blue eyebrows and a purple heart tattoo”.' }
+        { pair:['assets/face-textures/screenshot-2.webp','assets/face-textures/screenshot-3.webp'], cap:'Two more examples. Prompts: “rock-lava face” and “old grandma with blue lips, blue eyebrows and a purple heart tattoo”.' }
       ]
     },
     'realtime-cv': {
@@ -41,7 +41,7 @@ export const DATA = {
       bullets:["A local object-detection module for the Furhat robot: a YOLO detector runs on a PC beside the robot and processes the robot's camera stream via Furhat's WebSocket API in real time.",'Custom interface for tuning while the system runs: confidence threshold, processing resolution, class filter, and model switching.','Presented the system in a pre-recorded demo at the 9th Furhat Conference.'],
       tags:['Computer Vision','UI Prototyping','WebSockets','Python'],
       media:[
-        YT('plZun_BxsN4',"Demo for the 9th Furhat Conference: computer vision running on a PC with the robot's camera streamed over Furhat's real-time API."),
+        YT('plZun_BxsN4',"Demo for the 9th Furhat Conference: computer vision running on a PC with the robot's camera streamed over Furhat's WebSocket API."),
         IMG('assets/realtime-cv/ui-standard.webp','Settings panel with dynamic confidence threshold and class filter.'),
         IMG('assets/realtime-cv/ui-processing-resolution.webp','Processing resolution can be changed at runtime; a toggle switches the preview between full and processing resolution.'),
         IMG('assets/realtime-cv/ui-detection-results.webp','Detection log for analysis and debugging.'),
@@ -89,7 +89,7 @@ export const DATA = {
     },
     'harvesting-robot': {
       title:'Autonomous Harvesting Robot', status:'Course project · 10/2023 – 10/2024', origin:'Engineering Office III & Product Engineering I · TH Köln',
-      sub:'A rover, an arm and a detector that find and pick up “apples” (tennis balls) on their own, plus a quantified comparison of a time-of-flight scanner against computer vision.',
+      sub:'A rover, an arm and a detector that find and pick up “apples” (plastic balls) on their own, plus a quantified comparison of a time-of-flight scanner against computer vision.',
       bullets:['Developed an autonomous harvesting system, combining a rover, a robotic arm, and a detector.','Modelled kinematics and implemented P/PI control for approaching and picking up apples.','Built a ToF-based 2D scanner, trained a YOLOv8n model on 2,445 self-collected images (Raspberry Pi 5, 10 to 15 FPS), and compared detectors quantitatively.',"Demonstrated the YOLO-based system was ~18× faster (50.9 → 2.8 s/m) and reduced task error rate from 40% to 0% on an indoor track with 18 target positions (Welch's t-test, Fisher's exact test)."],
       tags:['Control Engineering','Computer Vision','Sensor Integration','Sensor Processing','CAD','FEA','Soldering','Empirical Research','Python','C++'],
       media:[
