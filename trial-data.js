@@ -104,7 +104,7 @@ export const DATA = {
     }
   },
   interests: ['Robotics','Social Robotics','Computer Vision','Human-Machine Interaction','Speech Interfaces','Kinematics & Control','Embedded Hardware','Mechanical Design','Multimodal LLMs'],
-  facts: [ {k:'Based in', v:'Cologne, Germany'}, {k:'Studying', v:'BSc MPEC, TH Köln, expected 2027'}, {k:'Languages', v:'German (native) · English (C1, IELTS 7.5)'} ],
+  facts: [ {k:'Based in', v:'Cologne, Germany'}, {k:'Studying', v:'BSc MPEC, TH Köln, expected 08/2027'}, {k:'Languages', v:'German (native) · English (C1, IELTS 7.5)'} ],
   roles: [
     { logo:'assets/logos/furhat.webp', title:'Prototyping & Concepting Intern', org:'Furhat Robotics AB', when:'07/2025 – 04/2026 · Stockholm, Sweden · full-time',
       bullets:['Developed a local real-time object detection module, including a custom interface for dynamic parameter tuning (confidence threshold, processing resolution, class filtering).','Built full-stack prototypes using WebSockets and n8n to enable automated conversation summarisation and long-term memory for social interaction.','Conducted electromechanical troubleshooting, including PCB flashing and soldering, to resolve display and servo motor faults, and documented root causes for the engineering team.',"Prototyped a pipeline using generative models with multimodal inputs (text and image) to produce face textures compliant with the robot's projection geometry."],
