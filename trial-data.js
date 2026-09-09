@@ -100,7 +100,7 @@ export const DATA = {
         IMG('assets/harvesting-robot/yolov5n-detection.webp','Detection example: “ball” detections with bounding boxes in the camera image.'),
         CONTAIN('assets/harvesting-robot/comparison-heatmap.webp','Time to retrieve the ball from each of the 18 target positions, starting bottom centre: ToF system 50.9 s/m on average, vision system 2.8 s/m.'),
         YT('hvwtfKgKrhQ','Side-by-side comparison of both systems, cut as a light-hearted short video.', true),
-        HEAD('System architecture','Two detection systems on one rover: a servo-swept time-of-flight scanner and a camera-based YOLO pipeline on a Raspberry Pi 5. Both report to an Arduino Mega 2560 that computes heading and distance and drives rover and gripper. Diagram labels are in German.'),
+        HEAD('System architecture',"We tested a camera-based YOLO pipeline on a Raspberry Pi 5 as a replacement for the rover's original servo-swept time-of-flight scanner. The rest of the system remained largely unchanged, allowing a comparison of speed and error rates. An Arduino Mega 2560 computes heading and distance and drives the rover and gripper. Diagram labels are in German."),
         CONTAIN('assets/harvesting-robot/comparison-overview.webp','How the two systems work, from sensing to actuation.'),
         CONTAIN('assets/harvesting-robot/cv-system-energy-information-flow.webp','Energy and information flow of the vision-based rover.')
       ]
