@@ -67,7 +67,7 @@ export const DATA = {
     'cobot': {
       title:'Voice-Controlled Cobot System', status:'Course project · 10/2024 – 02/2025', origin:'Service and Industry Robotics · TH Köln',
       sub:'Working side by side: a robot arm assists its user by fetching and stowing tools on voice command in a shared workspace.',
-      bullets:['Developed a ROS 2 service-based architecture with a central manager orchestrating dialogue, object detection, and robotic arm control for collaborative tool fetching and stowing.','Linked STT, LLM intent recognition, and TTS for hands-free interaction in a shared workspace.','Derived closed-form IK for a 5-DOF arm, bypassing 6D solver limits caused by coupled orientation.','Iteratively trained a YOLO11-OBB model for oriented tool detection, raising mAP50-95 to ~81%.'],
+      bullets:['Developed a ROS 2 service-based architecture with a central manager orchestrating dialogue, object detection, and robotic arm control for collaborative tool fetching and stowing.','Linked STT, LLM intent recognition, and TTS for hands-free interaction in a shared workspace.','Derived closed-form IK for a 4-DOF arm, resolving MoveIt failures caused by orientation constraints.','Iteratively trained a YOLO11-OBB model for oriented tool detection, raising mAP50-95 to ~81%.'],
       tags:['Human-Robot Interaction','Computer Vision','Speech Processing','ROS 2','MoveIt','Gazebo','RViz','TF2','Empirical Research','Python','C++','CMake'],
       media:[
         YT('JqvvkfmM_tQ','Prototype demo video.'),
