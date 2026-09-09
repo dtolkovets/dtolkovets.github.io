@@ -9,7 +9,7 @@ export const DATA = {
   order: ['dual-llm', 'face-textures', 'realtime-cv', 'smart-glasses', 'cobot', 'rag-chatbot', 'harvesting-robot'],
   projects: [
     { slug:'dual-llm', title:'Dual-LLM Architecture for Asynchronous Quality Correction', year:'Planned 2027', badge:'Upcoming', img:'assets/dual-llm/card-still.webp' },
-    { slug:'face-textures', title:'Generative Face Textures for a Projection Robot', year:'2026', img:'assets/face-textures/ui-webgl-poster.webp', loop:'assets/face-textures/ui-webgl-loop.mp4' },
+    { slug:'face-textures', title:'Face Texture Generation for a Social Robot', year:'2026', img:'assets/face-textures/ui-webgl-poster.webp', loop:'assets/face-textures/ui-webgl-loop.mp4' },
     { slug:'realtime-cv', title:'Real-Time Computer Vision for a Social Robot', year:'2025', img:'assets/realtime-cv/card-settings.webp' },
     { slug:'smart-glasses', title:'Open-Source Smart Glasses Kit', year:'2024 – 2025', img:'assets/smart-glasses/turntable-poster.webp', loop:'assets/smart-glasses/turntable-loop.mp4' },
     { slug:'cobot', title:'Voice-Controlled Cobot System', year:'2024 – 2025', img:'assets/voice-cobot/card-still.webp' },
@@ -25,9 +25,9 @@ export const DATA = {
       media:[ CONTAIN('assets/dual-llm/architecture.webp','Asynchronous dual-LLM architecture.') ]
     },
     'face-textures': {
-      title:'Generative Face Textures for a Projection Robot', status:'Internship project · 2026', origin:'Furhat Robotics, Stockholm',
-      sub:"Describe a face in words or drop in a reference image, and a generative pipeline turns it into a texture that fits the robot's back-projected head.",
-      bullets:["A generation pipeline that turns a text prompt, a reference image, or both into a face texture that fits the robot's projection geometry.",'Built a browser interface with a live 3D preview of the generated face on the robot head next to the current face map, with separate face and eye generation steps.','Added character load/save, reference-image upload, and a gesture panel to check how a generated texture behaves under facial animation.'],
+      title:'Face Texture Generation for a Social Robot', status:'Internship project · 2026', origin:'Furhat Robotics, Stockholm',
+      sub:"Describe a face in words, and a generative pipeline turns it into a texture that fits the robot's back-projected head.",
+      bullets:["Built a generation pipeline combining LLM prompt processing, tailored templates and internal reference images to guide face textures towards the robot's required proportions.",'Built a browser interface with a live 3D preview of the generated face on the robot head next to the current face map, with separate face and eye generation steps.','Added character load/save and a gesture panel to check how a generated texture behaves under facial animation.'],
       tags:['Generative Models','Multimodal Input','UI Prototyping','WebGL','Python','Docker'],
       media:[
         VID('assets/face-textures/ui-webgl-loop.mp4','assets/face-textures/ui-webgl-poster.webp','Interactive 3D preview: the generated face on the head model can be moved, rotated and zoomed.'),
