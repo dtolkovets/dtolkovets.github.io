@@ -83,7 +83,7 @@ export const DATA = {
     'rag-chatbot': {
       title:'Retrieval-Augmented Generation Study Chatbot', status:'Course project · 02/2024 – 10/2024', origin:'Human-Machine-Interaction · TH Köln',
       sub:'An exam-preparation chatbot that shows where its answers come from, measured against a plain LLM for hallucinations.',
-      bullets:['Built a RAG chatbot for exam preparation with an interface that displays information sources.','Quantitatively compared retrieval-augmented GPT-4o with base GPT-4o on hallucination rates.','Conducted a usability study to assess the helpfulness of the displayed information sources.'],
+      bullets:['Built a RAG chatbot for exam preparation that answers questions using materials such as lecture notes and academic literature and shows the relevant passages in its interface.','Quantitatively compared retrieval-augmented GPT-4o with base GPT-4o on hallucination rates.','Conducted a usability study to assess the helpfulness of the displayed information sources.'],
       tags:['Retrieval-Augmented Generation','Human-Machine Interaction','UI Design','Empirical Research','Usability Testing','Python','Conda'],
       media:[
         IMG('assets/rag-chatbot/chatbot-example.webp',"The interface: chat on the left, the retrieved sources in the middle, and a document viewer on the right that renders formulas and images correctly. Built on Weaviate's open-source RAG front-end, adapted for the study."),
@@ -100,7 +100,7 @@ export const DATA = {
         IMG('assets/harvesting-robot/yolov5n-detection.webp','Detection example: “ball” detections with bounding boxes in the camera image.'),
         CONTAIN('assets/harvesting-robot/comparison-heatmap.webp','Time to retrieve the ball from each of the 18 target positions, starting bottom centre: ToF system 50.9 s/m on average, vision system 2.8 s/m.'),
         YT('hvwtfKgKrhQ','Side-by-side comparison of both systems, cut as a light-hearted short video.', true),
-        HEAD('System architecture',"We tested a camera-based YOLO pipeline on a Raspberry Pi 5 as a replacement for the rover's original servo-swept time-of-flight scanner. The rest of the system remained largely unchanged, allowing a comparison of speed and error rates. An Arduino Mega 2560 computes heading and distance and drives the rover and gripper. Diagram labels are in German."),
+        HEAD('System architecture',"We first developed the rover with a servo-swept time-of-flight scanner for object detection. An Arduino Mega 2560 computes heading and distance and drives the rover and gripper. We then developed a camera-based YOLO pipeline on a Raspberry Pi 5 as a replacement for the scanner. Keeping the rest of the system largely unchanged allowed us to compare speed and error rates. Diagram labels are in German."),
         CONTAIN('assets/harvesting-robot/comparison-overview.webp','How the two systems work, from sensing to actuation.'),
         CONTAIN('assets/harvesting-robot/cv-system-energy-information-flow.webp','Energy and information flow of the vision-based rover.')
       ]
